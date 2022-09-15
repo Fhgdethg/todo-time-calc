@@ -1,0 +1,26 @@
+.calculator {
+
+  &__functional {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+  }
+
+  &__controls {
+    display: grid;
+    grid-gap: 13px;
+    grid-template: repeat(2, 30px) / repeat(auto-fit, minmax(25%, 1fr));
+  }
+
+  &__numbers {
+    display: grid;
+    grid-gap: 13px 8px;
+    grid-template: repeat(2, 30px) / repeat(auto-fit, minmax(17%, 1fr));
+  }
+
+  @media screen and (max-width: 495px) {
+    &__functional {
+      grid-template-columns: repeat(auto-fit, 100%)
+    }
+  }
+}

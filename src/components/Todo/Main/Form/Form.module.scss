@@ -1,0 +1,43 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  &__text,
+  &__submit {
+    padding: 10px;
+    border-radius: 7px;
+    border: 3px solid rgb(192, 131, 27);
+    color: rgb(192, 131, 27);
+    outline: none;
+    transition: .4s;
+
+    &:hover {
+      box-shadow: 0 0 10px rgb(225, 212, 189);
+    }
+  }
+
+  &__text {
+    width: 100%;
+
+    &::placeholder {
+      color: rgb(192, 131, 27);
+    }
+  }
+
+  &__submit {
+    padding: 10px;
+    min-width: 100px;
+  }
+
+  @media screen and (max-width: 700px) {
+    & {
+      flex-direction: column;
+
+      &__submit {
+        width: 100%;
+      }
+    }
+  }
+}

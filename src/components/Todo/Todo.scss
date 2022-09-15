@@ -1,0 +1,25 @@
+body, body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: rgba(1, 1, 44, 0.799);
+}
+
+ul {
+  list-style: none;
+}
+
+a, span, button {
+  display: block;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}

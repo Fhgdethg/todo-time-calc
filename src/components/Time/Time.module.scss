@@ -1,0 +1,19 @@
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: 50px;
+    font-style: italic;
+  }
+
+  &__value {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+
+  &__title, &__value {
+    color: rgb(239, 216, 216);
+  }
+}

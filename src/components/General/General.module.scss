@@ -1,0 +1,35 @@
+.header {
+  padding: 20px 20px;
+  background: rgb(239, 216, 216);
+  border-bottom: 2px solid aqua;
+
+  nav {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      &:not(:first-child) {
+        margin-left: 40px;
+      }
+
+      .header__active {
+        color: rgb(0, 161, 161);
+      }
+
+      a {
+        text-decoration: none;
+        color: rgba(1, 1, 44, 0.799);
+        transition: .4s;
+
+        &:hover {
+          transform: scale(1.05);
+          color: rgba(0, 0, 26, 0.799);
+        }
+      }
+    }
+  }
+}

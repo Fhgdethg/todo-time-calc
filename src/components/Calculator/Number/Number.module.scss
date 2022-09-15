@@ -1,0 +1,13 @@
+.num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(186, 182, 182);
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgb(0,0,0, 0.8);
+  transition: .4;
+
+  &:hover {
+    transform: scale(1.005);
+  }
+}
